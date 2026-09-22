@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DreamPay — Turn Small Tasks into Real Money</title>
+  <meta name="description" content="Complete simple tasks, earn rewards instantly, and withdraw your money in seconds to UPI or Bank with DreamPay. 256-bit secure, 7.2s average settlement.">
+  <meta name="theme-color" content="#2563eb">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.dreampay.info/">
+  <meta property="og:title" content="DreamPay — Turn Small Tasks into Real Money">
+  <meta property="og:description" content="Complete simple tasks, earn rewards instantly, and withdraw in seconds to your UPI account.">
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Subtle ambient background glow -->
+  <div class="bg-mesh-glow" aria-hidden="true"></div>
+
+  <!-- Header Navigation -->
+  <header class="header-nav" id="mainHeader">
+    <div class="container nav-inner">
+      <a href="https://www.dreampay.info/" class="brand-logo" aria-label="DreamPay Home">
+        <div class="logo-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+          </svg>
+        </div>
+        <span>DreamPay<span class="dot">.</span></span>
+      </a>
+
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#how-it-works" class="nav-link">How it works</a></li>
+          <li><a href="#why-dreampay" class="nav-link">Why DreamPay</a></li>
+          <li><a href="#product" class="nav-link">Product</a></li>
+          <li><a href="#trust" class="nav-link">Trust</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button type="button" class="btn-login" id="openLoginBtn">Login</button>
+        <a href="https://www.dreampay.info/DreamPay.apk" class="btn-primary" id="headerDownloadBtn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>Download</span>
+        </a>
+
+        <button type="button" class="mobile-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Hero Left Content -->
+          <div class="hero-content">
+            <div class="badge-live">
+              <span class="pulse-dot"></span>
+              <span>Live · <strong id="liveWithdrawalsCount">12,840</strong> withdrawals today</span>
+            </div>
+
+            <h1 class="hero-title">
+              Turn small tasks <br>
+              into <span class="gradient-text">real money.</span>
+            </h1>
+
+            <p class="hero-subtitle">
+              Complete simple tasks, earn rewards instantly, and withdraw your money in seconds. No friction, just results.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="https://www.dreampay.info/DreamPay.apk" class="btn-primary" id="heroDownloadBtn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <span>Download App</span>
+              </a>
+
+              <a href="#product" class="btn-secondary" id="heroStartEarningBtn">
+                <span>Start Earning</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+
+            <div class="hero-highlights">
+              <div class="highlight-item">
+                <div class="highlight-icon">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                  </svg>
+                </div>
+                <span>Instant Withdrawals</span>
+              </div>
+
+              <div class="highlight-item">
+                <div class="highlight-icon">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                  </svg>
+                </div>
+                <span>Secure Payments</span>
+              </div>
+
+              <div class="highlight-item">
+                <div class="highlight-icon">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                </div>
+                <span>7.2s Average Payout</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Right Mockup / Wallet Card -->
+          <div class="hero-visual">
+            <div class="phone-wrapper">
+              <div class="phone-card">
+                <div class="phone-screen">
+                  
+                  <!-- Mockup Top Bar -->
+                  <div class="phone-header">
+                    <div class="brand-mini">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.5">
+                        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+                      </svg>
+                      <span>DreamPay Wallet</span>
+                    </div>
+                    <span class="user-status-pill">● Verified</span>
+                  </div>
+
+                  <!-- Wallet Balance Card -->
+                  <div class="wallet-balance-card">
+                    <div class="wallet-label-row">
+                      <span>Wallet balance</span>
+                      <span class="growth-badge">+8.4%</span>
+                    </div>
+                    <div class="wallet-balance" id="mockupBalance">₹2,840.00</div>
+                    <div class="wallet-action-row">
+                      <button type="button" class="btn-wallet-action btn-wallet-withdraw" id="heroWithdrawBtn">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <polyline points="15 3 21 3 21 9"></polyline>
+                          <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                        <span>Withdraw</span>
+                      </button>
+                      <button type="button" class="btn-wallet-action btn-wallet-more" id="heroEarnMoreBtn">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <line x1="12" y1="5" x2="12" y2="19"></line>
+                          <line x1="5" y1="12" x2="19" y2="12"></line>
+                        </svg>
+                        <span>Earn more</span>
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Mini Tasks List -->
+                  <div class="mockup-tasks">
+                    <div class="mockup-task-item" data-task-payout="45">
+                      <div class="task-info-left">
+                        <div class="task-icon-circle">
+                          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                            <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                          </svg>
+                        </div>
+                        <div>
+                          <div class="task-title-sub">Try a new finance app</div>
+                          <div class="task-duration">2 min · Sponsored</div>
+                        </div>
+                      </div>
+                      <div class="task-reward-pill">+₹45</div>
+                    </div>
+
+                    <div class="mockup-task-item" data-task-payout="18">
+                      <div class="task-info-left">
+                        <div class="task-icon-circle">
+                          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                          </svg>
+                        </div>
+                        <div>
+                          <div class="task-title-sub">Complete a survey</div>
+                          <div class="task-duration">1 min · Opinion</div>
+                        </div>
+                      </div>
+                      <div class="task-reward-pill">+₹18</div>
+                    </div>
+
+                    <div class="mockup-task-item" data-task-payout="12">
+                      <div class="task-info-left">
+                        <div class="task-icon-circle">
+                          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                          </svg>
+                        </div>
+                        <div>
+                          <div class="task-title-sub">Watch product demo</div>
+                          <div class="task-duration">45s · Video</div>
+                        </div>
+                      </div>
+                      <div class="task-reward-pill">+₹12</div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <!-- Floating Verification Chip -->
+                <div class="floating-toast">
+                  <div class="toast-icon">✓</div>
+                  <div>
+                    <div class="toast-text-title">Withdrawal · UPI</div>
+                    <div class="toast-text-meta">₹520.00 in 7.2s</div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Infinite Live Payouts Ticker Marquee -->
+    <section class="marquee-section" aria-label="Real-time Withdrawals Feed">
+      <div class="marquee-track" id="marqueeTrack">
+        <!-- Item list duplicated for seamless CSS infinite translation -->
+        <div class="payout-pill">
+          <span class="payout-icon">✓</span>
+          <span>Withdrawal successful</span>
+          <span class="payout-amt">₹150</span>
+          <span class="payout-method">UPI</span>
+        </div>
+        <div class="payout-pill">
+          <span class="payout-icon">✓</span>
+          <span>Withdrawal successful</span>
+          <span class="payout-amt">₹520</span>
+          <span class="payout-method">PhonePe</span>
+        </div>
+        <div class="payout-pill">
+          <span class="payout-icon">✓</span>
+          <span>Withdrawal successful</span>
+          <span class="payout-amt">₹75</span>
+          <span class="payout-method">GPay</span>
+        </div>
+        <div class="payout-pill">
+          <span class="payout-icon">✓</span>
+          <span>Withdrawal successful</span>
+          <span class="payout-amt">₹350</span>
+          <span class="payout-method">Paytm</span>
+        </div>
+        <div class="payout-pill">
+          <span class="payout-icon">✓</span>
+          <span>Withdrawal successful</span>
+          <span class="payout-amt">₹230</span>
+          <span class="payout-method">UPI</span>
+        </div>
+        <div class="payout-pill">
+          <span class="payout-icon">✓</span>
+          <span>Withdrawal successful</span>
+          <span class="payout-amt">₹95</span>
+          <span class="payout-method">GPay</span>
+        </div>
+        <div class="payout-pill">
+          <span class="payout-icon">✓</span>
+          <span>Withdrawal successful</span>
+          <span class="payout-amt">₹480</span>
+          <span class="payout-method">Bank</span>
+        </div>
+        <div class="payout-pill">
+          <span class="payout-icon">✓</span>
+          <span>Withdrawal successful</span>
+          <span class="payout-amt">₹1,200</span>
+          <span class="payout-method">IMPS</span>
+        </div>
+        <div class="payout-pill">
+          <span class="payout-icon">✓</span>
+          <span>Withdrawal successful</span>
+          <span class="payout-amt">₹60</span>
+          <span class="payout-method">UPI</span>
+        </div>
+        <div class="payout-pill">
+          <span class="payout-icon">✓</span>
+          <span>Withdrawal successful</span>
+          <span class="payout-amt">₹275</span>
+          <span class="payout-method">Paytm</span>
+        </div>
+        <div class="payout-pill">
+          <span class="payout-icon">✓</span>
+          <span>Withdrawal successful</span>
+          <span class="payout-amt">₹815</span>
+          <span class="payout-method">PhonePe</span>
+        </div>
+        <div class="payout-pill">
+          <span class="payout-icon">✓</span>
+          <span>Withdrawal successful</span>
+          <span class="payout-amt">₹140</span>
+          <span class="payout-method">UPI</span>
+        </div>
+
+        <!-- Repeated set for seamless loop -->
+        <div class="payout-pill">
+          <span class="payout-icon">✓</span>
+          <span>Withdrawal successful</span>
+          <span class="payout-amt">₹150</span>
+          <span class="payout-method">UPI</span>
+        </div>
+        <div class="payout-pill">
+          <span class="payout-icon">✓</span>
+          <span>Withdrawal successful</span>
+          <span class="payout-amt">₹520</span>
+          <span class="payout-method">PhonePe</span>
+        </div>
+        <div class="payout-pill">
+          <span class="payout-icon">✓</span>
+          <span>Withdrawal successful</span>
+          <span class="payout-amt">₹75</span>
+          <span class="payout-method">GPay</span>
+        </div>
+        <div class="payout-pill">
+          <span class="payout-icon">✓</span>
+          <span>Withdrawal successful</span>
+          <span class="payout-amt">₹350</span>
+          <span class="payout-method">Paytm</span>
+        </div>
+        <div class="payout-pill">
+          <span class="payout-icon">✓</span>
+          <span>Withdrawal successful</span>
+          <span class="payout-amt">₹230</span>
+          <span class="payout-method">UPI</span>
+        </div>
+        <div class="payout-pill">
+          <span class="payout-icon">✓</span>
+          <span>Withdrawal successful</span>
+          <span class="payout-amt">₹95</span>
+          <span class="payout-method">GPay</span>
+        </div>
+        <div class="payout-pill">
+          <span class="payout-icon">✓</span>
+          <span>Withdrawal successful</span>
+          <span class="payout-amt">₹480</span>
+          <span class="payout-method">Bank</span>
+        </div>
+        <div class="payout-pill">
+          <span class="payout-icon">✓</span>
+          <span>Withdrawal successful</span>
+          <span class="payout-amt">₹1,200</span>
+          <span class="payout-method">IMPS</span>
+        </div>
+        <div class="payout-pill">
+          <span class="payout-icon">✓</span>
+          <span>Withdrawal successful</span>
+          <span class="payout-amt">₹60</span>
+          <span class="payout-method">UPI</span>
+        </div>
+        <div class="payout-pill">
+          <span class="payout-icon">✓</span>
+          <span>Withdrawal successful</span>
+          <span class="payout-amt">₹275</span>
+          <span class="payout-method">Paytm</span>
+        </div>
+        <div class="payout-pill">
+          <span class="payout-icon">✓</span>
+          <span>Withdrawal successful</span>
+          <span class="payout-amt">₹815</span>
+          <span class="payout-method">PhonePe</span>
+        </div>
+        <div class="payout-pill">
+          <span class="payout-icon">✓</span>
+          <span>Withdrawal successful</span>
+          <span class="payout-amt">₹140</span>
+          <span class="payout-method">UPI</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Loop Section -->
+    <section class="loop-section" id="how-it-works">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-pill">The loop</span>
+          <h2 class="section-title">A loop designed to keep <br><span class="gradient-text">rewarding you.</span></h2>
+          <p class="section-desc">
+            Five steps. No friction. Built so every action you take pays back, again and again.
+          </p>
+        </div>
+
+        <div class="loop-steps-grid">
+          <!-- Step 01 -->
+          <div class="loop-step-card">
+            <div class="step-num-badge">
+              <span class="step-num">01</span>
+              <span class="step-spark-icon">⚡</span>
+            </div>
+            <h3 class="step-title">Complete Task</h3>
+            <div class="step-meta">30s – 2 min</div>
+            <p class="step-desc">Pick from curated, micro-actions designed for thumbs. Quick surveys, app discoveries, and interactive video trials.</p>
+          </div>
+
+          <!-- Step 02 -->
+          <div class="loop-step-card">
+            <div class="step-num-badge">
+              <span class="step-num">02</span>
+              <span class="step-spark-icon">✨</span>
+            </div>
+            <h3 class="step-title">Earn Rewards</h3>
+            <div class="step-meta">Instantly credited</div>
+            <p class="step-desc">Zero verification lag. As soon as you finish a task, coins and cash are immediately deposited to your balance.</p>
+          </div>
+
+          <!-- Step 03 -->
+          <div class="loop-step-card">
+            <div class="step-num-badge">
+              <span class="step-num">03</span>
+              <span class="step-spark-icon">💸</span>
+            </div>
+            <h3 class="step-title">Withdraw Instantly</h3>
+            <div class="step-meta">UPI · Bank · Wallet</div>
+            <p class="step-desc">Tap withdraw to transfer funds directly to Google Pay, PhonePe, Paytm, or your bank account in under 8 seconds.</p>
+          </div>
+
+          <!-- Step 04 -->
+          <div class="loop-step-card">
+            <div class="step-num-badge">
+              <span class="step-num">04</span>
+              <span class="step-spark-icon">🤝</span>
+            </div>
+            <h3 class="step-title">Refer Friends</h3>
+            <div class="step-meta">Share your code</div>
+            <p class="step-desc">Invite colleagues and friends. Unlock instant bonus credits plus lifelong tiered commissions on their payouts.</p>
+          </div>
+
+          <!-- Step 05 -->
+          <div class="loop-step-card">
+            <div class="step-num-badge">
+              <span class="step-num">05</span>
+              <span class="step-spark-icon">🚀</span>
+            </div>
+            <h3 class="step-title">Earn More</h3>
+            <div class="step-meta">Recurring rewards</div>
+            <p class="step-desc">Keep your streak alive. The more continuous days you engage, the higher your reward multiplier climbs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why People Love It - Bento Grid -->
+    <section class="why-section" id="why-dreampay">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-pill">Why people love it</span>
+          <h2 class="section-title">Built around the things <br><span class="gradient-text">that actually matter.</span></h2>
+          <p class="section-desc">
+            We stripped away the clutter, artificial lockups, and waiting periods. Here is why users trust DreamPay every day.
+          </p>
+        </div>
+
+        <div class="bento-grid">
+          
+          <!-- Bento 1: Instant Withdrawals -->
+          <div class="bento-card bento-large-1">
+            <div>
+              <div class="bento-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                <span>Real-Time Settlement</span>
+              </div>
+              <h3 class="bento-title">Instant withdrawals</h3>
+              <p class="bento-desc">
+                Money in your account in under 8 seconds. No "processing" purgatory. The moment you tap withdraw, it lands.
+              </p>
+            </div>
+
+            <!-- Visual Completed Card -->
+            <div class="withdrawal-receipt-card">
+              <div class="receipt-left">
+                <div class="receipt-status-badge">✓</div>
+                <div>
+                  <div class="receipt-label">Completed</div>
+                  <div class="receipt-upi">Withdrawal · UPI</div>
+                </div>
+              </div>
+              <div class="receipt-right">
+                <div class="receipt-amount">₹520.00</div>
+                <span class="receipt-speed">⚡ 7.2s</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bento 2: Easy Tasks -->
+          <div class="bento-card bento-med-1">
+            <div>
+              <div class="bento-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+                <span>Bite-Sized Actions</span>
+              </div>
+              <h3 class="bento-title">Easy tasks</h3>
+              <p class="bento-desc">
+                No complicated work. Two-minute actions. Designed for thumbs, not spreadsheets.
+              </p>
+            </div>
+
+            <!-- Task Category Interactive Tags -->
+            <div class="task-chips-wrap">
+              <div class="task-tag active" data-task-info="Fast 60-second multiple-choice surveys on popular brands.">Surveys</div>
+              <div class="task-tag" data-task-info="Install and launch verified top finance and utility apps.">App trials</div>
+              <div class="task-tag" data-task-info="Watch 30-second high-definition trailers & demos.">Watch & earn</div>
+              <div class="task-tag" data-task-info="Vote in instant community polls and get credited.">Quick polls</div>
+            </div>
+          </div>
+
+          <!-- Bento 3: Refer & Earn -->
+          <div class="bento-card bento-med-2">
+            <div>
+              <div class="bento-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                <span>Passive Income</span>
+              </div>
+              <h3 class="bento-title">Refer & earn</h3>
+              <p class="bento-desc">
+                Recurring rewards on every friend you bring to the platform. Build your passive income.
+              </p>
+            </div>
+
+            <!-- Referral Code Card with Copy Interaction -->
+            <div class="referral-share-box">
+              <div>
+                <div class="referral-code-label">Your code</div>
+                <div class="referral-code-val" id="refCodeText">DREAMPAY·ARJ24</div>
+              </div>
+              <button type="button" class="btn-copy-code" id="copyRefBtn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                <span id="copyBtnLabel">Copy</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Bento 4: Secure & Smooth -->
+          <div class="bento-card bento-large-2">
+            <div>
+              <div class="bento-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                <span>Enterprise Architecture</span>
+              </div>
+              <h3 class="bento-title">Secure & Smooth</h3>
+              <p class="bento-desc">
+                256-bit encryption. PCI-aligned payouts. No data resale. 60fps experience built for one-hand use. Zero friction.
+              </p>
+            </div>
+
+            <!-- Specs Grid -->
+            <div class="specs-badges-grid">
+              <div class="spec-badge-card">
+                <div class="spec-icon">🛡️</div>
+                <div>
+                  <div class="spec-title">Encrypted</div>
+                  <div class="spec-sub">256-bit bank-grade TLS</div>
+                </div>
+              </div>
+
+              <div class="spec-badge-card">
+                <div class="spec-icon">⚡</div>
+                <div>
+                  <div class="spec-title">60fps UI</div>
+                  <div class="spec-sub">Smooth mobile experience</div>
+                </div>
+              </div>
+
+              <div class="spec-badge-card">
+                <div class="spec-icon">🔒</div>
+                <div>
+                  <div class="spec-title">Zero Data Resale</div>
+                  <div class="spec-sub">Strict privacy compliance</div>
+                </div>
+              </div>
+
+              <div class="spec-badge-card">
+                <div class="spec-icon">💳</div>
+                <div>
+                  <div class="spec-title">PCI Aligned</div>
+                  <div class="spec-sub">Direct banking rails</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Section: Interactive Earnings & Withdrawal Simulator -->
+    <section class="product-section" id="product">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-pill">Product</span>
+          <h2 class="section-title">Calculate your daily & <br><span class="gradient-text">monthly potential.</span></h2>
+          <p class="section-desc">
+            Test the live rewards engine below. Adjust your routine and simulate an instantaneous UPI cashout.
+          </p>
+        </div>
+
+        <div class="simulator-container">
+          <!-- Left Controls -->
+          <div class="sim-controls">
+            <div class="slider-group">
+              <div class="slider-label-row">
+                <span class="slider-label">Daily Tasks Completed</span>
+                <span class="slider-value-badge" id="tasksSliderVal">6 tasks/day</span>
+              </div>
+              <input type="range" min="1" max="25" value="6" class="custom-range" id="tasksSlider">
+            </div>
+
+            <div class="slider-group">
+              <div class="slider-label-row">
+                <span class="slider-label">Friends Referred</span>
+                <span class="slider-value-badge" id="refSliderVal">4 friends</span>
+              </div>
+              <input type="range" min="0" max="20" value="4" class="custom-range" id="refSlider">
+            </div>
+
+            <div class="slider-group">
+              <div class="slider-label-row">
+                <span class="slider-label">Average Task Time</span>
+                <span style="font-size:0.88rem; color:var(--text-slate-600); font-weight:600;">1.5 Minutes</span>
+              </div>
+              <p style="font-size: 0.85rem; color: var(--text-slate-500);">
+                Tasks are refreshed hourly from premium brand sponsors and research institutions.
+              </p>
+            </div>
+          </div>
+
+          <!-- Right Estimated Output -->
+          <div class="sim-output-card">
+            <div>
+              <div class="sim-output-title">Estimated Monthly Earnings</div>
+              <div class="sim-output-amt" id="simMonthlyAmt">₹8,640</div>
+              <p class="sim-output-sub">
+                Based on current sponsor rates, daily login streak multipliers, and 10% recurring referral rewards.
+              </p>
+            </div>
+
+            <button type="button" class="btn-sim-payout" id="simWithdrawBtn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+              <span>Simulate Instant Withdrawal</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust Section -->
+    <section class="trust-section" id="trust">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-pill">Trust</span>
+          <h2 class="section-title">The boring details <br><span class="gradient-text">we obsess over.</span></h2>
+          <p class="section-desc">
+            Earning should be the exciting part. Everything underneath it should be quiet, predictable, and safe.
+          </p>
+        </div>
+
+        <div class="trust-grid">
+          <!-- 01 Secure Transactions -->
+          <div class="trust-card">
+            <div class="trust-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <h3 class="trust-card-title">Secure transactions</h3>
+            <p class="trust-card-desc">256-bit end-to-end encryption guarding every session, transaction token, and credential.</p>
+          </div>
+
+          <!-- 02 Fast Withdrawals -->
+          <div class="trust-card">
+            <div class="trust-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            </div>
+            <h3 class="trust-card-title">Fast withdrawals</h3>
+            <p class="trust-card-desc">Average 7.4s settlement directly into UPI VPA, IMPS, and leading mobile wallets without holds.</p>
+          </div>
+
+          <!-- 03 Verified Rewards -->
+          <div class="trust-card">
+            <div class="trust-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            </div>
+            <h3 class="trust-card-title">Verified rewards</h3>
+            <p class="trust-card-desc">Audited reward pool escrow. Every campaign is prepaid by verified corporate partners.</p>
+          </div>
+
+          <!-- 04 Reliable Platform -->
+          <div class="trust-card">
+            <div class="trust-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+            </div>
+            <h3 class="trust-card-title">Reliable platform</h3>
+            <p class="trust-card-desc">99.98% uptime, 24/7 autonomous settlement servers operating day and night without downtime.</p>
+          </div>
+        </div>
+
+        <!-- Trust Badges Bar -->
+        <div class="trust-badges-bar">
+          <div class="trust-seal-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            <span>NPCI & UPI Integrated</span>
+          </div>
+          <div class="trust-seal-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+            <span>256-Bit SSL Protection</span>
+          </div>
+          <div class="trust-seal-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            <span>Sub-8s Automated Payouts</span>
+          </div>
+          <div class="trust-seal-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>100% Free & Transparent</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Final Conversion CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-banner">
+          <h2 class="cta-title">Ready when you are.</h2>
+          <p class="cta-subtitle">Your next reward is one task away.</p>
+          
+          <div class="cta-buttons-wrap">
+            <a href="https://www.dreampay.info/DreamPay.apk" class="btn-cta-download" id="ctaDownloadBtn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <span>Download DreamPay</span>
+            </a>
+            <a href="#how-it-works" class="btn-cta-learn">Learn more</a>
+          </div>
+
+          <div class="cta-specs-row">
+            <span>● iOS · Android</span>
+            <span>● Free to use</span>
+            <span>● No hidden fees</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <a href="https://www.dreampay.info/" class="brand-logo" aria-label="DreamPay Home">
+            <div class="logo-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+              </svg>
+            </div>
+            <span>DreamPay<span class="dot">.</span></span>
+          </a>
+          <p class="footer-brand-desc">
+            The friction-free micro-rewards network. Complete quick actions, earn verified cash, and withdraw to UPI instantaneously.
+          </p>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Navigation</div>
+          <ul class="footer-links-list">
+            <li><a href="#how-it-works">How it works</a></li>
+            <li><a href="#why-dreampay">Why DreamPay</a></li>
+            <li><a href="#product">Product</a></li>
+            <li><a href="#trust">Trust</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Download</div>
+          <ul class="footer-links-list">
+            <li><a href="https://www.dreampay.info/DreamPay.apk">Android APK (v2.4)</a></li>
+            <li><a href="https://www.dreampay.info/" id="footerIosLink">iOS Web App</a></li>
+            <li><a href="https://www.dreampay.info/DreamPay.apk">Direct Mirror</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Legal & Security</div>
+          <ul class="footer-links-list">
+            <li><a href="https://www.dreampay.info/#privacy">Privacy Policy</a></li>
+            <li><a href="https://www.dreampay.info/#terms">Terms of Service</a></li>
+            <li><a href="https://www.dreampay.info/#security">Security Standards</a></li>
+            <li><a href="https://www.dreampay.info/#contact">Contact & Support</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>DreamPay © 2026. All rights reserved.</div>
+        <div class="footer-legal-links">
+          <a href="https://www.dreampay.info/#privacy">Privacy</a>
+          <a href="https://www.dreampay.info/#terms">Terms</a>
+          <a href="https://www.dreampay.info/#security">Security</a>
+          <a href="https://www.dreampay.info/#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Login Modal -->
+  <div class="modal-overlay" id="loginModal" role="dialog" aria-modal="true" aria-labelledby="loginTitle">
+    <div class="modal-card">
+      <button type="button" class="modal-close-btn" id="closeLoginModal" aria-label="Close modal">✕</button>
+      <h3 class="modal-title" id="loginTitle">Welcome Back</h3>
+      <p class="modal-sub">Log in with your registered phone number to manage your wallet and withdrawals.</p>
+      
+      <form id="loginForm" onsubmit="event.preventDefault(); window.handleLoginSubmit();">
+        <div class="form-group">
+          <label class="form-label" for="phoneInput">Mobile Number</label>
+          <div style="display:flex; gap:8px;">
+            <input type="text" value="+91" disabled style="width: 60px; text-align:center; padding: 12px 6px; border-radius:12px; border:1px solid #e2e8f0; background:#f1f5f9; font-weight:600;">
+            <input type="tel" class="form-input" id="phoneInput" placeholder="98765 43210" required pattern="[0-9]{10}">
+          </div>
+        </div>
+        <button type="submit" class="form-submit-btn">Send OTP</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Interactive Withdrawal Simulator Modal -->
+  <div class="modal-overlay" id="withdrawalSuccessModal" role="dialog" aria-modal="true">
+    <div class="modal-card" style="text-align: center;">
+      <button type="button" class="modal-close-btn" id="closeWithdrawalModal" aria-label="Close modal">✕</button>
+      <div style="width:64px; height:64px; border-radius:50%; background:#ecfdf5; color:#10b981; display:flex; align-items:center; justify-content:center; font-size:1.8rem; margin:0 auto 16px auto;">
+        ✓
+      </div>
+      <h3 class="modal-title">Withdrawal Dispatched!</h3>
+      <p class="modal-sub" style="margin-bottom:14px;">Instant settlement via UPI rail has been initiated.</p>
+      <div style="background:#f8fbff; border:1px solid #dbeafe; border-radius:16px; padding:16px; margin-bottom:20px; text-align:left;">
+        <div style="display:flex; justify-content:space-between; font-size:0.85rem; color:#64748b; margin-bottom:4px;">
+          <span>Recipient</span>
+          <span style="font-weight:700; color:#0f172a;">you@okaxis</span>
+        </div>
+        <div style="display:flex; justify-content:space-between; font-size:0.85rem; color:#64748b; margin-bottom:4px;">
+          <span>Settlement Time</span>
+          <span style="font-weight:700; color:#10b981;">⚡ 6.8 seconds</span>
+        </div>
+        <div style="display:flex; justify-content:space-between; font-size:1.1rem; font-weight:800; color:#0f172a; margin-top:8px; border-top:1px dashed #cbd5e1; padding-top:8px;">
+          <span>Total Received</span>
+          <span style="color:#2563eb;" id="modalWithdrawalAmt">₹520.00</span>
+        </div>
+      </div>
+      <a href="https://www.dreampay.info/DreamPay.apk" class="form-submit-btn" style="display:block; text-align:center; text-decoration:none;">
+        Download App to Cash Out Live
+      </a>
+    </div>
+  </div>
+
+  <!-- Realtime Floating Payout Toast Notification (Bottom Left) -->
+  <div class="live-stream-toast" id="liveStreamToast" aria-live="polite">
+    <div class="live-toast-icon">✓</div>
+    <div class="live-toast-content">
+      <div class="live-toast-title" id="toastTitle">Withdrawal successful ₹350</div>
+      <div class="live-toast-sub" id="toastMeta">Arjun S. · Just now · UPI</div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
